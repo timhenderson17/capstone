@@ -1,0 +1,48 @@
+{
+  "name": "correlation-graph",
+  "version": "1.0.0",
+  "description": "a re-usable correlation graph component",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "rm -rf build && mkdir build && rollup -c -- index.js",
+    "build": "rm -rf build && mkdir build && rollup -c  -- index.js && cp build/correlation-graph.js ~/workspace/correlation-graph/examples/07/ && cp build/correlation-graph.js ~/workspace/correlation-graph/examples/10/ && cp build/correlation-graph.js ~/workspace/correlation-graph/examples/11/ && cp build/correlation-graph.js ~/workspace/correlation-graph/examples/static/01/ && cp build/correlation-graph.js $H2O_HOME/h2o-core/src/main/resources/www/",
+    "lint": "eslint index.js src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h2oai/correlation-graph.git"
+  },
+  "keywords": [
+    "correlation",
+    "graph",
+    "network",
+    "d3"
+  ],
+  "author": "@micahstubbs <micah.stubbs@gmail.com> (https://twitter.com/micahstubbs)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/h2oai/correlation-graph/issues"
+  },
+  "homepage": "https://github.com/h2oai/correlation-graph#readme",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babelrc-rollup": "^3.0.0",
+    "cli": "^0.11.2",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "package-preamble": "0.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-json": "^2.0.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-strip": "^1.1.1"
+  },
+  "dependencies": {
+    "d3": "^4.7.1",
+    "lodash": "^4.17.4"
+  }
+}
