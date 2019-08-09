@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://grapedrop.com/preview/4022c40cab6f4e87bf6c168db0bd21e9 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Lyric Plotter</title>
+
+<meta name="description" content="">
+<meta name="generator" content="Grapedrop">
+
+<!-- Apple Stuff -->
+    <link rel="apple-touch-icon" href="https://grapedrop.com/favicon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content=" [Preview]">
+
+<!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content=" [Preview]">
+<meta itemprop="description" content="">
+<meta itemprop="image" content="">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="http://4022c40.grapedrop.com">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="https://grapedrop.com/favicon.png">
+        <!-- <meta name="robots" content="noindex,nofollow"> -->
+
+        <link rel="stylesheet" href="./gjs-base.css">
+        <link rel="stylesheet" href="./styles.css">
+
+        <script src="./spin.js"></script>
+
+        <script src="./jquery.min.js.download"></script>
+        <script src="./lory.min.js.download"></script>
+
+
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+        <link rel='stylesheet' href='style.css'>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <script src='./d3.v4.min.js'></script>
+        <script src='./babel.min.js'></script>
+        <script src='./jLouvain.js'></script>
+        <script src='./lodash.js'></script>
+        <script src='./correlation-graph.js'></script>
+        <script src='./draw-pictogram-table.js'></script>
+
+    </head>
+
+    <body>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+        </style>
+
+        <div id="i0qn" class="row">
+            <div id="iyxi" class="cell" style="width: 25%;">
+                <div id="i7fvp" class="row" style="height: 352px">
+                    <div id="ii2mf" class="cell">
+                        <h1 id="ihtkl"style="margin-top:0px">Lyric Plotter</h1>
+                        <div id="i4p4z" style="font-family:Verdana, Geneva, serif; font-weight:100; font-size:rem; text-align: justify; padding-bottom: 0%">​​Welcome to Lyric Plotter! We analyze music strictly by the lyrics, and show the analysis in a unique and fun way. Each searched-for artist’s songs is represented as a bubble, with all of the bubbles connected with colored lines to form one interactive web. We hope you enjoy our creation!<br>​​​​​​​<br></div>
+                        <div id="graphBox" class="spinner" opacity="0">
+                            <div class='main-content'>
+                                <div class='graph-container' id='graph'></div>
+                            </div> 
+                        </div>
+                        <form method="post" id="iivd3" autocomplete="off">
+                            <input type="text" placeholder="Artist Name" name="artist" id="i3y0r" required="" class="input"><input type="text" placeholder="Artist Name" name="artist" class="input"><input type="text" placeholder="Artist Name" name="artist" class="input"><button type="submit" id="i7vtah" class="button">Next</button>
+                            <div id="ihlvwg" class="row" style="padding-top:3px; padding-bottom: 0px">
+                                <div id="ii85he" class="cell" style="padding-left: 0px;max-height: 50px">
+                                    <a href="mailto:timothyh@terpmail.umd.edu" target="" id="igduk" class="gpd-icon footer-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div id="iamzhg" class="cell" style="max-height: 50px">
+                                    <div id="ilmzc" style="padding-right: 0%; padding-top: 13px; color: #2ed168; font-family: Verdena, sans-serif; font-size: 12px">   Contact the    Developer<br></div>
+                                </div>
+                                <!--
+                                <div id="amazing" class="cell">
+                                    <div id="i4p4z" style="font-family:Verdena, Geneva, sans-serif; font-weight: lighter; font-size: 19px; padding-top: 0%; text-align: justify">​​Welcome to Lyric Plotter! We analyze music strictly by the lyrics, and show the analysis in a unique and fun way. Each searched-for artist’s songs is represented as a bubble, with all of the bubbles connected with colored lines to form one interactive web. We hope you enjoy our creation!<br></div>
+                                </div>
+                            -->
+                            </div>
+                            <div data-form-state="success" id="iok8lf" class="state-success" style="margin-top: 100px;display: none; width: 50%; margin-left: 25%; transition:all 1.5s ease; opacity: 0; font-family:Verdana, Geneva, serif; font-weight:100; font-size:.9rem;">Thanks!</div>
+                            <div data-form-state="error" id="izlpe9" class="state-error" style="display: none;">An error occurred on processing your request, try again!</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="iyxi2" class="cell" style="width: 50%">
+                <!--
+                    <div id="i7fvp" class="row">
+                        <div id="ii2mf" class="cell">
+                            <h1 id="ihtkl">About Our Project</h1>
+                            <div id="i4p4z" style="font-family:Verdana, Geneva, serif; font-weight:5; font-size:1.3rem; text-align: justify;">​​Hi! Welcome to Lyric Plotter! We analyze music strictly by the lyrics, and show the analysis in a unique and fun way. Each searched-for artist’s songs is represented as a bubble, with all of the bubbles connected with colored lines to form one interactive web. We hope you enjoy our creation!</div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            
+        </div>
+        </section>                
+
+<style>
+    .page-brand-badge {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .page-brand-badge {
+        position: fixed !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
+        padding: 5px 7px;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: #555;
+        transition: box-shadow 0.25s;
+    }
+    .page-brand-badge:hover {
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+</style>
+
+    <script src="./loading.js"></script>
+
+    <script>
+        var spinner = new Spinner(opts);
+        var i = 0;
+        var timer;
+        function graph() {
+
+            jQuery.get('./graph.json', function(data) {
+            //console.log(data.nodes.length);
+
+            console.log(data.artists.indexOf(artists[0]));
+            console.log(data.artists.indexOf(artists[1]));
+            console.log(data.artists.indexOf(artists[2]));
+
+            if (data.nodes.length > 10 && data.artists.indexOf(artists[0]) >= 0 
+            && data.artists.indexOf(artists[1]) >= 0 && data.artists.indexOf(artists[2]) >= 0) {
+                console.log("time to graph!");
+                clearInterval(timer);
+            d3.queue()
+            .defer(d3.json, 'graph.json')
+            .await((error, data) => {
+                //
+                // draw correlation graph
+                //
+                if (error) throw error;
+                spinner.stop();
+                const correlationGraphProps = {
+                selector: '.graph-container',
+                data,
+                options: { 
+                    fixedNodeSize: undefined
+                }
+                }
+                window.correlationGraph(correlationGraphProps);
+                //
+                // draw pictogram table
+                //
+                const pictogramTableProps = {
+                selector: '.table-container',
+                data,
+                options: {
+                    topN: 20,
+                    linksVariable: 'edges',
+                    valueVariable: 'weight',
+                    sourceVariable: 'source',
+                    targetVariable: 'target',
+                    valueVariableHeader: 'correlation',
+                    sourceVariableLabel: 'sourceName',
+                    targetVariableLabel: 'targetName'
+                }
+                }
+                drawPictogramTable(pictogramTableProps);
+            });
+        } else if ( i < 24) {
+            console.log("incrementing");
+            i++;
+        } else {
+            alert("timeout :( try again")
+            console.log("time out");
+            clearInterval(timer);
+        }
+    });
+    }
+            //
+            // draw stats table on node mouseover
+            //
+
+        var artists = ["NULL", "NULL", "NULL"];
+        var formStateName = 'data-form-state';
+        var formStateEls = $('[' + formStateName + ']');
+        formStateEls.hide();
+        $('form').submit(function(e) {
+            e.preventDefault();
+            var form = $(this);
+            var action = (this.getAttribute('action') || '').trim();
+            var formData = new FormData(this);
+            var chkSelected = {};
+            var name = this.getAttribute('name');
+            name && formData.append('__name', name);
+
+            document.getElementById("i7fvp").style.marginLeft = "0%";
+            document.getElementById("i7fvp").style.width = "98.5%";
+            document.getElementById("iyxi2").remove();
+            setTimeout(function(){document.getElementById("i7fvp").style.marginTop = "0%";
+                document.getElementById("i7fvp").style.height = "97%";}, 1500);
+            setTimeout(function(){
+                var target = document.getElementById("graphBox");
+                target.style.height = "656px"
+                target.style.opacity="0";
+                setTimeout(function(){spinner = new Spinner(opts).spin(target);
+                    target.style.opacity="1";}, 1500);}, 3000);
+
+            // Init checkbox and radio if still empty
+            form.find('[type=radio], [type=checkbox]').each(function(item) {
+                var chkName = this.name;
+                if (this.checked) {
+                    chkSelected[chkName] = 1;
+                    return;
+                }
+                chkSelected[chkName] = 0;
+            });
+
+            for (var chk in chkSelected) {
+                if (!chkSelected[chk]) {
+                    formData.append(chk, '');
+                }
+            }
+
+            if (!action) {
+                action = "";
+            }
+
+            formStateEls.hide();
+            form.find('> *').fadeOut();
+            form.find('[' + formStateName + '=success]').stop(1).fadeIn().delay(3000)
+            setTimeout(function(){document.getElementById("iok8lf").style.opacity = "1";}, 3000);
+
+            var i = 0;
+
+            for (var pair of formData.entries()) {
+                artists[i] = pair[1] != "" ? pair[1] : "NULL";
+                i++;
+            }
+
+
+var parameters = { artists: artists };
+$.get('/ass', parameters, function(data) {
+    console.log("DATA" + data);
+    setTimeout(graph, 3000);
+    timer = setInterval(graph, 10000); //THIS IS WHERE I CAN SET THE INTERVAL FOR CHECKING FOR FILES !!!!!
+})
+
+/*
+            $.ajax({
+                type: 'POST',
+                timeout: 50000,
+                url: document.URL,
+                dataType: "json",
+                data: {url: document.URL, artists: artists},
+                error: function() {
+                    console.log("error somewhere");
+                },
+                success: function(result) {
+                    console.log('Response:', result);
+                    graph();
+                }   
+            })
+*/
+        });
+/*
+            $.ajax({
+                //url: "./",
+                method: 'POST',
+                processData: false,
+                contentType: false,
+                data: formData,
+            }).done(function(data) {
+                formStateEls.hide();
+                form.find('> *').fadeOut();
+                form.find('[' + formStateName + '=success]').stop(1).fadeIn();//.delay(3000).fadeOut();
+            }).fail(function(data) {
+                formStateEls.hide();
+                form.find('[' + formStateName + '=error]').stop(1).fadeIn().delay(3000).fadeOut();
+            });
+
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ', ' + pair[1]);
+            }
+        });
+
+                    var lastUpdateTime = parseInt("1547594752");
+
+            var checkLastUpdate = function () {
+                $.ajax({
+                    url: "https://grapedrop.com/check-last-update/4022c40cab6f4e87bf6c168db0bd21e9",
+                }).done(function(res) {
+                    if (res && res.data && res.data.lastUpdate
+                        && res.data.lastUpdate != lastUpdateTime) {
+                        location.reload();
+                    }
+                })
+            }
+
+                            setInterval(checkLastUpdate, 2000);
+                            */
+        </script>
+
+
+</body></html>

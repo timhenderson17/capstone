@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+body {
+   margin: 0;
+   width: 100%;
+   height: 100%;
+}
+#wrapper{
+   font-family:Helvetica, serif;
+   background-image:url(/assets/udf6b603dcbfe401db6a22febc5996c9b/38e9ac06869b4d9cb768b6bd0020a2c0_20150829_233428000_iOS.jpg);
+   background-position:left top;
+   background-attachment:scroll;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-color:rgba(0,0,0,0);
+}
+
+#i0qn{
+   height:100vh;
+}
+
+#iyxi{
+   display:block;
+   align-items:center;
+   justify-content:center;
+}
+
+#iyxi2 {
+   display:block;
+   align-items:center;
+   justify-content:center;
+}
+
+#i7fvp{
+   position:fixed;
+   display:block;
+   color:#ffffff;
+   border-radius:50px 50px 50px 50px;
+   width:50%;
+   height:45%;
+   max-width:4400px;
+   padding:20px 30px 20px 30px;
+   background-image:url(none);
+   background-repeat:repeat;
+   background-position:left top;
+   background-attachment:scroll;
+   background-size:auto;
+   background-color:#191414;
+   -webkit-transition:all 1.5s ease !important;
+   transition:all 1.5s ease !important;
+   justify-content:left;
+   align-items:center;
+   margin-left:12%;
+   margin-top:12%;
+   margin-bottom:20px;
+   margin-right:20px;
+   padding-top:5px
+}
+#ihtkl{
+   margin:19px 0 0 0;
+   font-family:Verdana, Geneva, sans-serif;
+   font-weight:100;
+   font-size:2.5rem;
+   padding:0 0 0 0;
+}
+.footer-icon{
+   width:30px;
+   height:30px;
+   margin:0 15px 0 0;
+   border-radius:100% 100% 100% 100%;
+   padding:5px 5px 5px 5px;
+   background-color:#1DB954;
+   display:inherit;
+}
+.input{
+   background-color:rgba(255,255,255,0.16);
+   height:35px;
+   color:#fff;
+   padding:7px 10px 7px 10px;
+   margin:0 0 7px 0;
+}
+#iamzhg{
+   padding:0 0 0 10px;
+   flex-basis:30%;
+   min-height:auto;
+   flex:0 1 auto;
+}
+#ihlvwg{
+   padding:10px 0 10px 0;
+}
+.button{
+   width:100%;
+   background-color:#1DB954;
+   font-size:14px;
+   height:35px;
+   padding:7px 15px 7px 15px;
+}
+#ii85he{
+   min-height:autopx;
+   flex-basis:10px;
+   padding:5px 0 5px 5px;
+   flex:0 1 auto;
+   align-self:stretch;
+   margin:0 -22px 0 0;
+}
+#iok8lf{
+   display:none;
+}
+#izlpe9{
+   display:none;
+}
+#ilmzc{
+   padding:20px 13px 10px 0;
+   text-align:left;
+   color:#10662f;
+   font-weight:300;
+   font-size:15px;
+}
+#i4p4z{
+   padding:10px 10px 10px 0;
+}
+#graphBox{
+    transition: opacity 1.5s ease;
+}
+@media (max-width: 768px){
+   #iyxi{
+       height:100%;
+   }
+   #iamzhg{
+       padding:0 0 0 0;
+       margin:5px 0 0 0;
+   }
+   #ibm2{
+       height:1px;
+       min-height:1px;
+   }
+}
